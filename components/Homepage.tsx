@@ -2,31 +2,39 @@ import Link from "next/link";
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Socials, Contact } from "@/data/data";
+import Profile from "@/public/assets/Portfolio Img.png";
 
 export default function Homepage() {
   return (
     <>
       <div className="mt-8 md:mt-12">
-        <h1
-          className="text-4xl md:text-[2.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-l from-blue-400 via-teal-400 via-cyan-400 via-green-400 to-blue-400 via-red-400 via-pink-400"
-          style={{
-            backgroundSize: "200% 200%",
-            animation: "gradientMove 3s ease infinite",
-            backgroundImage:
-              "linear-gradient(to left, #60a5fa, #2dd4bf, #22d3ee, #4ade80, #60a5fa)",
-          }}
-        >
-          Mohd Sahil Siddiqui
-          <style>
-            {`
+        <div className="flex items-center justify-between">
+          <h1
+            className="text-4xl md:text-[2.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-l from-blue-400 via-teal-400 via-cyan-400 via-green-400 to-blue-400 via-red-400 via-pink-400"
+            style={{
+              backgroundSize: "200% 200%",
+              animation: "gradientMove 3s ease infinite",
+              backgroundImage:
+                "linear-gradient(to left, #60a5fa, #2dd4bf, #22d3ee, #4ade80, #60a5fa)",
+            }}
+          >
+            Mohd Sahil Siddiqui
+            <style>
+              {`
           @keyframes gradientMove {
             0% { background-position: 100% 50%; }
             50% { background-position: 0% 50%; }
             100% { background-position: 100% 50%; }
           }
         `}
-          </style>
-        </h1>
+            </style>
+          </h1>
+          <Image
+            src={Profile}
+            alt="profile-img" // Keep width and height the same to ensure the circle shape
+            className="h-[8rem] w-[8rem] rounded-full" // This makes the image circular
+          />
+        </div>
         <p className="mt-8 tracking-wider text-base md:text-xl leading-8 md:leading-10">
           {" "}
           A frontend developer passionate about crafting rich and seamless web
