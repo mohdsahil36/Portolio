@@ -11,7 +11,7 @@ export default function Navbar() {
           Home
         </Navlink>
         <Navlink href="/about">About</Navlink>
-        <Navlink href="/career">Career</Navlink>
+        <Navlink href="/career">Work</Navlink>
       </div>
     </nav>
   );
