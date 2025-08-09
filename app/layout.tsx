@@ -1,19 +1,17 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Poppins } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 
-const ibmPlexMono = IBM_Plex_Mono({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-  display: "swap",
 });
 
-const fontPoppins = Poppins({
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fontPoppins.className} ${ibmPlexMono.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="w-full border-b border-gray-800">
           <div className="py-5 px-4 w-full md:w-2/4 mx-auto text-center">
