@@ -28,7 +28,7 @@ const Stack = [
   { icon: "icons8-express-js", content: "Express JS" },
   { icon: "icons8-firebase", content: "Firebase" },
   { icon: "Zustand-icon", content: "Zustand" },
-  { icon: "shadcn-ui", content: "ShadCn" },
+  { icon: "shadcn-ui_dark", content: "ShadCn" },
   { icon: "MongoDB", content: "Mongo Db" },
   { icon: "icons8-chatgpt", content: "ChatGPT" },
 ];
