@@ -85,7 +85,7 @@ export default function Homepage() {
                 />
                 <div className="grid grid-flow-row gap-y-0.5 mt-0.5">
                   <span className="text-sm font-semibold">{item.name}</span>
-                  <span className="text-sm text-neutral-600">
+                  <span className="text-sm text-neutral-400">
                     {item.username}
                   </span>
                 </div>
