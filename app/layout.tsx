@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Poppins, DM_Sans } from "next/font/google";
+import { IBM_Plex_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
